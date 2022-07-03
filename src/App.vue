@@ -1,20 +1,24 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Inicio</router-link> |
+      <router-link to="/about">Acerca de</router-link>
     </nav>
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
 <style>
+body {
+  background-color: #000
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #FFF;
 }
 
 nav {
@@ -23,10 +27,15 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #FFF;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: yellow;
+}
+
+nav a:hover {
+  color: yellow;
 }
 </style>
